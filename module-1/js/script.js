@@ -7,6 +7,10 @@ if (userMember <= 0) {
     alert("Ошибка ввода");
 }
 
+else if (userMember % 1 !== 0) {
+    alert("Ошибка ввода!!!");
+}
+
 else if (userMember <= taba) {
 
     if (confirm("Есть место в Taba. Согласны?")===true) {

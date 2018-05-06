@@ -165,10 +165,10 @@
 //     if (numbers[i] > num) {
 //         newNumbers.push(numbers[i])
 //     }
-    /* let test = numbers[i] > num;
-     console.log(test);
-     if (test === true) {
-     newNumbers.push(test);
+    /* let module-2-practice-tasks = numbers[i] > num;
+     console.log(module-2-practice-tasks);
+     if (module-2-practice-tasks === true) {
+     newNumbers.push(module-2-practice-tasks);
      } */
 // }
 // console.log(newNumbers);
@@ -214,15 +214,15 @@
 */
 
 
-// for (let i = 0; i < Infinity; i++) {
-//     let enterNumber = prompt('Введите число больше 100!', '');
-//     if (enterNumber >= 100) {
-//         alert('OK');
-//         break;
-//     } else {
-//         alert('Введите число более 100!');
-//     }
-// }
+for (let i = 0; i < Infinity; i++) {
+    let enterNumber = prompt('Введите число больше 100!', '');
+    if (enterNumber >= 100) {
+        alert('Молодец, так деражть');
+        break;
+    } else {
+        alert(enterNumber + ' - ето не больше 100, двоечник!');
+    }
+}
 
 // --------------------------------------------
 // Задание 8
@@ -242,3 +242,7 @@
   - Выводит сумму всех значений массива.
     "Сумма: <сумма всех значений в массиве>"
 */
+
+
+// let enterNum = prompt('Enter number');
+// let arr = [];

@@ -3,7 +3,7 @@ let sharm = 15;
 let hurgada = 25;
 let userMember = prompt("Введите число участников: ", 1);
 
-if (userMember <= 0) {
+if (userMember <= 0 && userMember%2 === 0) {
     alert("Ошибка ввода");
 }
 

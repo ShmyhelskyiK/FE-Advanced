@@ -31,7 +31,7 @@ let userPassword;
 let access = false;
 while (userPassword !== null) {
 
-    if (attempt === 0) {
+    if (attempt === 0 ) {
         alert("Аккаунт заблокирован");
         break;
     }

@@ -56,15 +56,31 @@ while (userPassword !== null) {
 
 const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd'];
 
-let enterPassword = prompt('Введите пароль');
+let attempt = 3;
+let userPassword;
+let access = false;
+while (userPassword !== null) {
 
-while (enterPassword < 3 ) {
-    if ()
+    if (attempt === 0) {
+        alert("Аккаунт заблокирован");
+        break;
+    }
+
+    if (access === true) break;
+
+    for (let i = 0; i < attempt; i++) {
+        userPassword = prompt("Pass", "");
+        if (userPassword === null) break;
+        if (userPassword === passwords[i]) {
+            alert("Добро пожаловать!");
+            access = true;
+            break;
+        } else {
+            attempt--;
+            alert(`У вас остлось ${attempt} попыток`);
+        }
+    }
 }
-
-
-
-
 
 // for (const index of passwords) {
 //     console.log(index);

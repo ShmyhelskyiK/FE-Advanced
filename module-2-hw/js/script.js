@@ -50,5 +50,7 @@ for(let i = 0; i < numbers.length; i++) {
 
 alert("Массив состоит из следующих цифр: " + numbers);
 alert('Общая сумма чисел масива равна ' + total);
+// alert(`Массив состоит из следующих цифр ${numbers}`);
+// alert(`Сумма чисел равна ${total}`);
 console.log(numbers);
 console.log(total);

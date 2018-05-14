@@ -29,24 +29,24 @@
 */
 //
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
-let login = prompt("Enter your login:");
+let login = prompt("Введите логин");
+
+let result = addLogin(logins,login);
+alert(result);
 
 function addLogin(logins, login) {
-    if (checkIfLoginExists == true) {
-        alert('Такой логин уже используется!')
-    } else if(checkIfLoginExists == false) {
-        logins = logins.push(login)
-        alert('Логин успешно добавлен!')
-    } else if(checkLoginValidity == false) {
-        alert('Ошибка! Логин должен быть от 4 до 16 символов')
-    }
-}
-
-function checkIfLoginExists (logins, login) {
-    if (logins.includes(login)) {
-        return true;
-    } else {
-        return false;
+    if (Array.isArray(logins)) {
+        if (checkLoginValidity (login)) {
+            if (checkIfLoginExists (logins, login)) {
+                return `Логин "${login}" уже используется!`;
+            } else {
+                logins.push(login);
+                console.log(logins);
+                return `Ваш логин "${login}" успешно добавлен!`;
+            }
+        } else {
+            return 'Ошибка! Логин должен быть от 4 до 16 символов';
+        }
     }
 }
 
@@ -58,10 +58,12 @@ function checkLoginValidity (login) {
     }
 }
 
-// console.log(checkLoginValidity());
-
-
-
-
+function checkIfLoginExists (logins, login) {
+    if (logins.includes(login)) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 

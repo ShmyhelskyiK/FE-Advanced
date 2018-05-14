@@ -70,13 +70,6 @@
   Остальные буквы слова должны быть не заглавными.
 */
 
-function titleCase(str) {
-    let newArr =
-}
-
-console.log(
-    titleCase("abcd")
-);
 
 // Вызовы функции для проверки
 // console.log(
@@ -93,5 +86,12 @@ console.log(
 
 
 // ____________________END_____________________________________________________
+const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
+
+checkLoginValidity = checkLoginValidity(login);
+console.log(checkLoginValidity);
+
+
+
 // ____________________END_____________________________________________________
 // ____________________END_____________________________________________________

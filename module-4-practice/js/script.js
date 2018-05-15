@@ -1,119 +1,64 @@
-// function calc () {
-//     console.log('inside text!');
-// }
-// calc();
+/* ключи обєкта (name, stars) */
 
-// ---------------
-
-// let calc = function () {
-//     console.log('inside text!');
-// }
-// calc();
-
-// ---------------
-
-// function showText () {
-//     return 'FUNCTION';
-// }
+// const hotel = {
+//     name: 'Bla-Bla',
+//     stars: 5,
+//     capacity: 100,
+//     'status hotel': 'Lux',
+// };
 //
-// console.log(showText());
+// console.log(hotel);
 
-// ---------------
+// console.log(hotel.name);
+// console.log(hotel["name"]);
 
-// function showText () {
-//    let str = 'FUNCTION';
-//    return str;
-// }
+// переписали name в hotel
+// hotel.name = 'ALABAMA';
+// console.log(hotel.name);
+
+// добавили addres в hotel
+// hotel.addres = 'Albania';
+// console.log(hotel.addres);
+
+
+// ____________________________
+
+// let name = "tresh";
+// let stars = 5;
 //
-// console.log(showText() + '-test');
-
-// ---------------
-
-// function addNum() {
-//     let a = 55;
-//     let b = 6;
-//     return a+b;
+// const  hotel ={
+//     name,
+//     stars,
+//     capacity: 100,
 // }
 //
-// let result = addNum();
-//
-// console.log(result);
-// console.log(addNum());
-// ---------------
+// console.log(hotel);
 
-// function calc(num1, num2) {
-//     return num1 + num2;
-// }
-//
-// console.log(calc(5,6,8));
-// console.log(calc(10,65));
-// console.log(calc('10','65'));
-// alert(calc(8,9));
+// let manager = "John";
+// hotel.manager = manager;
 
-// ---------------
+// ____________________________
 
-// function arrSum(arr) {
-//     let total = 0;
-//     for (let item of arr) {
-//         total += item;
-//     }
-//     return total;
-// }
-// console.log(arrSum([1, 5, 6, 8, 9]));
+const  hotel ={
+    name: 'BLa-BLa',
+    stars: 5,
+    capacity: 100,
+}
 
-// ---------------
+// let hasName = "name" in hotel;
+// let hasName = hotel.hasOwnProperty('stars');
+// let hasPool = "pool" in hotel;
 
-// function show(name = 'user', date = '30') {
-//     return `${name} blablbalv ${date} fasfa`;
-// }
-//
-// console.log(show(12,40));
+// console.log(hasName);
+// console.log(hasPool);
 
-// ---------------
-// console.log(x('A man, a plan, a canal. Panama'));
-// function x(str)  {
-//
-//     let arr = str.toLowerCase().split('');
-//     let arrReverse = str.toLowerCase().split('').reverse();
-//     let newArr = [];
-//     let newReverse = [];
-//     for (let item of arr) {
-//         if (item != ' ' && item != ',' && item !='.' ) {
-//             newArr.push(item);
-//         }
-//
-//     }
-//     for (let item of arrReverse) {
-//         if (item != ' ' && item != ',' && item !='.' ) {
-//             newReverse.push(item);
-//         }
-//
-//     }
-//     let m = 0;
-//         for (let i=0; i<= newArr.length-1;i++) {
-//
-//             if (newReverse[i] === newArr[i]) {
-//                 m++;
-//
-//             }
-//
-//         }
-//     if (m === newArr.length) {
-//             return 'Строка полиндром';
-//     } else {
-//             return 'Строка не полиндром';
-//     }
-//
-// }
-//console.log(x('A man, a plan, a canal. Panama'));
-// ---------------
+// ____________________________
+// ____________________________
+// ____________________________
+// ____________________________
+// ____________________________
+// ____________________________
+// ____________________________
+// ____________________________
+// ____________________________
 
-// (function calc () {
-//     console.log('calc')
-// })();
-
-// ---------------
-// ---------------
-// ---------------
-// ---------------
-// ---------------

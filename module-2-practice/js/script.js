@@ -34,3 +34,6 @@
 //     sum = sum + element;
 // }
 // console.log(sum);
+
+const arr = ['mango', 'three', 'two'];
+console.log(arr.length);
